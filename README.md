@@ -1,84 +1,42 @@
-<!-- markdownlint-disable-next-line -->
-<div align="center">
+# 개요
 
-  <!-- markdownlint-disable-next-line -->
-  # Chirpy Jekyll Theme
+Jekyll을 이용한 블로그 만들기
 
-  A minimal, responsive, and feature-rich Jekyll theme for technical writing.
+## 순서
+1. Chirpy 테마 fork
+https://github.com/cotes2020/jekyll-theme-chirpy/fork
 
-  [![CI](https://img.shields.io/github/actions/workflow/status/cotes2020/jekyll-theme-chirpy/ci.yml?logo=github)][ci]&nbsp;
-  [![Codacy Badge](https://img.shields.io/codacy/grade/4e556876a3c54d5e8f2d2857c4f43894?logo=codacy)][codacy]&nbsp;
-  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy?color=goldenrod)][license]&nbsp;
-  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?&logo=RubyGems&logoColor=ghostwhite&label=gem&color=orange)][gem]&nbsp;
-  [![Open in Dev Containers](https://img.shields.io/badge/Dev_Containers-Open-deepskyblue?logo=linuxcontainers)][open-container]
+2. 로컬 clone
 
-  [**Live Demo** →][demo]
+3. chirpy 초기화 하기
 
-  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
+4. 로컬에서 실행해 보기
+bundle
+jekyll serve or jekyll serve -host 0.0.0.0
 
-</div>
+5. github action 변경
+settings --> Pages --> Github actions으로 변경
 
-## Features
+6. 로컬에서 레포지토리로 올리기
+git pull
+git rm _posts/2019-08-08-write-a-new-post.md
+git rm _posts/2019-08-09-getting-started.md
+git commit -n -m "11111"
 
-- Dark Theme
-- Localized UI language
-- Pinned Posts on Home Page
-- Hierarchical Categories
-- Trending Tags
-- Table of Contents
-- Last Modified Date
-- Syntax Highlighting
-- Mathematical Expressions
-- Mermaid Diagrams & Flowcharts
-- Dark Mode Images
-- Embed Media
-- Comment Systems
-- Built-in Search
-- Atom Feeds
-- PWA
-- Web Analytics
-- SEO & Performance Optimization
 
-## Documentation
 
-To learn how to use, develop, and upgrade the project, please refer to the [Wiki][wiki].
+## (이미지 처리)
+page내에서 image_path: /assets/images/ 정의하고
+![이미지2]({{ page.image_path }}/apple-touch-icon.png)
 
-## Contributing
+또는
 
-Contributions (_pull requests_, _issues_, and _discussions_) are what make the open-source community such an amazing place
-to learn, inspire, and create. Any contributions you make are greatly appreciated.
-For details, see the "[Contributing Guidelines][contribute-guide]".
+_config.yml 내에서 image_path: /assets/images/ 정의하고
 
-## Credits
+![이미지2]({{ site.image_path }}/apple-touch-icon.png)
 
-### Contributors
 
-Thanks to [all the contributors][contributors] involved in the development of the project!
+이미지 사이즈 줄이기
+![이미지2](/assets/images/apple-touch-icon.png){: width="70%"}
 
-[![all-contributors](https://contrib.rocks/image?repo=cotes2020/jekyll-theme-chirpy&columns=16)][contributors]
-<sub> — Made with [contrib.rocks](https://contrib.rocks)</sub>
 
-### Third-Party Assets
-
-This project is built on the [Jekyll][jekyllrb] ecosystem and some [great libraries][lib], and is developed using [VS Code][vscode] as well as tools provided by [JetBrains][jetbrains] under a non-commercial open-source software license.
-
-The avatar and favicon for the project's website are from [ClipartMAX][clipartmax].
-
-## License
-
-This project is published under [MIT License][license].
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[ci]: https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml?query=event%3Apush+branch%3Amaster
-[codacy]: https://app.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
-[license]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
-[open-container]: https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/cotes2020/jekyll-theme-chirpy
-[jekyllrb]: https://jekyllrb.com/
-[clipartmax]: https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/
-[demo]: https://cotes2020.github.io/chirpy-demo/
-[wiki]: https://github.com/cotes2020/jekyll-theme-chirpy/wiki
-[contribute-guide]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/CONTRIBUTING.md
-[contributors]: https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors
-[lib]: https://github.com/cotes2020/chirpy-static-assets
-[vscode]: https://code.visualstudio.com/
-[jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
