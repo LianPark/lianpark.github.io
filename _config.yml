@@ -9,14 +9,14 @@ theme: jekyll-theme-chirpy
 lang: ko
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+timezone: America/Vancouver
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: LianPark blog2 # the main title
+title: 리안 블로그 # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: 기억은 잠시 메모는 영원히 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
